@@ -7,11 +7,26 @@ package src;
  */
 public class Pedido {
 
-    private float valorTotal;
+    private double valorTotal;
     private int qtdProdutos;
 
-//    public boolean baixaEstoque(ProdutoEspecifico item) {
-//    }
+    
+    public boolean baixaEstoque(ProdutoEspecifico item, int qtd) {
+        if (item.getQtdEstoque() >= qtd ) {
+            item.setQtdEstoque(-getQtdProdutos());
+            this.pagamento(item, qtd);
+            return true;
+        }
+        System.out.println("Produto Sem Estoque");
+        return false;
+        
+    }
+    
+    protected void pagamento (ProdutoEspecifico item, int qtd) {
+        setValorTotal(qtd * item.getPreco());
+        System.out.print("Valor total: R$");
+        System.out.println(getValorTotal());
+    }
 
     //toString:
     @Override
@@ -25,11 +40,11 @@ public class Pedido {
         return builder.toString();
     }
 
-    public float getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 
-    public void setValorTotal(float valorTotal) {
+    public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
     }
 

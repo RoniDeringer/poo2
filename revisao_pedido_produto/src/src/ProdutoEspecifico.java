@@ -8,18 +8,19 @@ package src;
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
-public class ProdutoEspecifico extends ProdutoGenerico{
-    
+public class ProdutoEspecifico extends ProdutoGenerico {
+
     private int id;
     private String cor;
     private float peso;
+    private int qtdEstoque;
 
-    
-    
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("ProdutoEspecifico[cor=");
+        builder.append("ProdutoEspecifico[id=");
+        builder.append(id);
+        builder.append(", cor=");
         builder.append(cor);
         builder.append(", peso=");
         builder.append(peso);
@@ -30,7 +31,6 @@ public class ProdutoEspecifico extends ProdutoGenerico{
     }
 
 
-    
     public String getCor() {
         return cor;
     }
@@ -54,6 +54,15 @@ public class ProdutoEspecifico extends ProdutoGenerico{
     public void setId(int id) {
         this.id = id;
     }
-    
-    
+
+    public int getQtdEstoque() {
+        return qtdEstoque;
+    }
+
+    public void setQtdEstoque(int qtdEstoque) {
+         this.qtdEstoque = qtdEstoque;
+
+         //mantém sempre atualizado o estoque Geral
+        this.setQtdEstoqueGeral(qtdEstoque);
+    }
 }

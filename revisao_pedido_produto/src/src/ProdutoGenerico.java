@@ -13,7 +13,7 @@ public class ProdutoGenerico {
     private String codigoPai;
     private String nome;
     private double preco;
-    private int qtdEstoque;
+    private int qtdEstoqueGeral;
     protected Distribuidor distribuidor;
 
     public void aumentoEstoque(String codigoPai, int qtdProdutos, double valor) {
@@ -30,7 +30,7 @@ public class ProdutoGenerico {
         builder.append(", preco=");
         builder.append(preco);
         builder.append(", qtdEstoque=");
-        builder.append(qtdEstoque);
+        builder.append(qtdEstoqueGeral);
         builder.append("]");
         return builder.toString();
     }
@@ -51,12 +51,12 @@ public class ProdutoGenerico {
         this.preco = preco;
     }
 
-    public int getQtdEstoque() {
-        return qtdEstoque;
+    public int getQtdEstoqueGeral() {
+        return qtdEstoqueGeral;
     }
 
-    public void setQtdEstoque(int qtdEstoque) {
-        this.qtdEstoque = qtdEstoque;
+    public void setQtdEstoqueGeral(int qtdEstoqueGeral) {
+        this.qtdEstoqueGeral = qtdEstoqueGeral + getQtdEstoqueGeral();
     }
 
     public String getCodigoPai() {

@@ -17,7 +17,6 @@ public class main {
         camisa.setCodigoPai("CAM-30");
         camisa.setNome("Camisa");
         camisa.setPreco(89.90);
-        camisa.setQtdEstoque(10);
         camisa.setDistribuidor(dist1);  //agregação 
 
         ProdutoEspecifico prod1 = new ProdutoEspecifico();
@@ -28,6 +27,7 @@ public class main {
         prod1.setId(31);
         prod1.setCor("Vermelho");
         prod1.setPeso(0.4f);
+        prod1.setQtdEstoque(5);
 
         ProdutoEspecifico prod2 = new ProdutoEspecifico();
         prod2.setCodigoPai(camisa.getCodigoPai());
@@ -37,8 +37,15 @@ public class main {
         prod2.setId(32);
         prod2.setCor("Verde");
         prod2.setPeso(0.4f);
-        System.out.println(prod2);
+        prod2.setQtdEstoque(2);
         
-
+        
+        Pedido compra1 = new Pedido();
+        compra1.setQtdProdutos(1);
+        compra1.setValorTotal(0);
+        compra1.baixaEstoque(prod2, 2);
+        
+      
+        
     }
 }
