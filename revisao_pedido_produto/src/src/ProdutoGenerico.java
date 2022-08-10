@@ -8,7 +8,7 @@ package src;
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
-public abstract class ProdutoGenerico {
+public class ProdutoGenerico {
 
     private String codigoPai;
     private String nome;

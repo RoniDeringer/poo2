@@ -5,26 +5,40 @@ package src;
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public class main {
+
     public static void main(String[] args) {
+
+        Distribuidor dist1 = new Distribuidor();
+        dist1.setNome("Renner");
+        dist1.setTipo("Roupa");
+        dist1.setPreco(50.00);
+
+        ProdutoGenerico camisa = new ProdutoGenerico();
+        camisa.setCodigoPai("CAM-30");
+        camisa.setNome("Camisa");
+        camisa.setPreco(89.90);
+        camisa.setQtdEstoque(10);
+        camisa.setDistribuidor(dist1);  //agregação 
+
+        ProdutoEspecifico prod1 = new ProdutoEspecifico();
+        prod1.setCodigoPai(camisa.getCodigoPai());
+        prod1.setNome(camisa.getNome());
+        prod1.setPreco(camisa.getPreco());
+        prod1.setDistribuidor(camisa.getDistribuidor());
+        prod1.setId(31);
+        prod1.setCor("Vermelho");
+        prod1.setPeso(0.4f);
+
+        ProdutoEspecifico prod2 = new ProdutoEspecifico();
+        prod2.setCodigoPai(camisa.getCodigoPai());
+        prod2.setNome(camisa.getNome());
+        prod2.setPreco(camisa.getPreco());
+        prod2.setDistribuidor(camisa.getDistribuidor());
+        prod2.setId(32);
+        prod2.setCor("Verde");
+        prod2.setPeso(0.4f);
+        System.out.println(prod2);
         
-   Distribuidor dist1 = new Distribuidor();
-   dist1.setNome("Renner");
-   dist1.setTipo("Roupa");
-   dist1.setPreco(50.00);
-        
-        
-    ProdutoEspecifico prod1 = new ProdutoEspecifico();
-    prod1.setCodigoPai("CAM-30");
-    prod1.setNome("Camisa");
-    prod1.setPreco(89.90);
-    prod1.setQtdEstoque(10);
-    prod1.setDistribuidor(dist1);
-    prod1.setId(31);
-    prod1.setCor("Vermelho");
-    prod1.setPeso(0.4f);
-    
-    
-    
-    
+
     }
 }
