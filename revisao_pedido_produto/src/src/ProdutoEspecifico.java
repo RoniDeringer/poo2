@@ -12,7 +12,6 @@ public class ProdutoEspecifico extends ProdutoGenerico{
     
     private int id;
     private String cor;
-    private float tamanho;
     private float peso;
 
     
@@ -22,8 +21,6 @@ public class ProdutoEspecifico extends ProdutoGenerico{
         StringBuilder builder = new StringBuilder();
         builder.append("ProdutoEspecifico[cor=");
         builder.append(cor);
-        builder.append(", tamanho=");
-        builder.append(tamanho);
         builder.append(", peso=");
         builder.append(peso);
         builder.append(", toString()=");
@@ -40,14 +37,6 @@ public class ProdutoEspecifico extends ProdutoGenerico{
 
     public void setCor(String cor) {
         this.cor = cor;
-    }
-
-    public float getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(float tamanho) {
-        this.tamanho = tamanho;
     }
 
     public float getPeso() {

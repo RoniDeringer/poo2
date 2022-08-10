@@ -47,7 +47,7 @@ public abstract class ProdutoGenerico {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
@@ -58,5 +58,22 @@ public abstract class ProdutoGenerico {
     public void setQtdEstoque(int qtdEstoque) {
         this.qtdEstoque = qtdEstoque;
     }
+
+    public String getCodigoPai() {
+        return codigoPai;
+    }
+
+    public void setCodigoPai(String codigoPai) {
+        this.codigoPai = codigoPai;
+    }
+
+    public Distribuidor getDistribuidor() {
+        return distribuidor;
+    }
+
+    public void setDistribuidor(Distribuidor distribuidor) {
+        this.distribuidor = distribuidor;
+    }
+    
 
 }
