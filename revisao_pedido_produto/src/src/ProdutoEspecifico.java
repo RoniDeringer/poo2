@@ -15,6 +15,14 @@ public class ProdutoEspecifico extends ProdutoGenerico {
     private float peso;
     private int qtdEstoque;
 
+    public void aumentoEstoque(int qtdProdutos) {
+        System.out.println("Valor da reposição de peças: R$ ");
+        System.out.print(qtdProdutos * distribuidor.getPreco());
+        setQtdEstoque(qtdProdutos);
+        System.out.println("Estoque Atual: ");
+        System.out.print(getQtdEstoque());
+    }
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
@@ -29,7 +37,6 @@ public class ProdutoEspecifico extends ProdutoGenerico {
         builder.append("]");
         return builder.toString();
     }
-
 
     public String getCor() {
         return cor;
@@ -60,9 +67,19 @@ public class ProdutoEspecifico extends ProdutoGenerico {
     }
 
     public void setQtdEstoque(int qtdEstoque) {
-         this.qtdEstoque = qtdEstoque;
+        this.qtdEstoque = qtdEstoque;
 
-         //mantém sempre atualizado o estoque Geral
+        //mantém sempre atualizado o estoque Geral
         this.setQtdEstoqueGeral(qtdEstoque);
+          /**
+         * 
+         * 
+         * 
+         * NAO TA FUNCIONANDO ! ! !
+         * 
+         * 
+         */
+        
+        
     }
 }

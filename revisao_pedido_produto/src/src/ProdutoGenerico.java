@@ -16,10 +16,6 @@ public class ProdutoGenerico {
     private int qtdEstoqueGeral;
     protected Distribuidor distribuidor;
 
-    public void aumentoEstoque(String codigoPai, int qtdProdutos, double valor) {
-
-        // if se codigo pai ja existe, só aumentar, se nao cria novo
-    }
 
     //toString:
     @Override
@@ -31,6 +27,8 @@ public class ProdutoGenerico {
         builder.append(preco);
         builder.append(", qtdEstoque=");
         builder.append(qtdEstoqueGeral);
+        builder.append("");
+        builder.append(distribuidor);
         builder.append("]");
         return builder.toString();
     }
@@ -57,7 +55,17 @@ public class ProdutoGenerico {
 
     public void setQtdEstoqueGeral(int qtdEstoqueGeral) {
         this.qtdEstoqueGeral = qtdEstoqueGeral + getQtdEstoqueGeral();
-    }
+        
+        /**
+         * 
+         * 
+         * 
+         * NAO TA FUNCIONANDO ! ! !
+         * 
+         * 
+         */ 
+        
+     }
 
     public String getCodigoPai() {
         return codigoPai;

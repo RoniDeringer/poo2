@@ -11,8 +11,17 @@ public class Distribuidor {
     private String tipo;
     private double preco;
 
-            
-            @Override
+    public Distribuidor(String nome, String tipo, double preco) {
+        this.nome = nome;
+        this.tipo = tipo;
+        this.preco = preco;
+    }
+
+
+
+
+
+    @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("\nDistribuidor[nome=");

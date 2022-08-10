@@ -8,11 +8,9 @@ public class main {
 
     public static void main(String[] args) {
 
-        Distribuidor dist1 = new Distribuidor();
-        dist1.setNome("Renner");
-        dist1.setTipo("Roupa");
-        dist1.setPreco(50.00);
-
+        Distribuidor dist1 = new Distribuidor("Renner", "Roupa", 50.00);
+        
+        
         ProdutoGenerico camisa = new ProdutoGenerico();
         camisa.setCodigoPai("CAM-30");
         camisa.setNome("Camisa");
@@ -43,7 +41,11 @@ public class main {
         Pedido compra1 = new Pedido();
         compra1.setQtdProdutos(1);
         compra1.setValorTotal(0);
-        compra1.baixaEstoque(prod2, 2);
+        
+        //RN: erro ao comprar mais que o estoque
+        compra1.baixaEstoque(prod2, 3); // dependencia
+        
+        System.out.println(dist1);
         
       
         
