@@ -21,7 +21,7 @@ public class ProdutoGenerico {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("ProdutoGenerico [nome=");
+        builder.append("\n   ProdutoGenerico [nome=");
         builder.append(nome);
         builder.append(", preco=");
         builder.append(preco);
@@ -55,16 +55,6 @@ public class ProdutoGenerico {
 
     public void setQtdEstoqueGeral(int qtdEstoqueGeral) {
         this.qtdEstoqueGeral = qtdEstoqueGeral + getQtdEstoqueGeral();
-        
-        /**
-         * 
-         * 
-         * 
-         * NAO TA FUNCIONANDO ! ! !
-         * 
-         * 
-         */ 
-        
      }
 
     public String getCodigoPai() {

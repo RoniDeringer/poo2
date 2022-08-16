@@ -1,5 +1,8 @@
 package src;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Pedido, a compra do produto
  *
@@ -7,53 +10,35 @@ package src;
  */
 public class Pedido {
 
-    private double valorTotal;
-    private int qtdProdutos;
+    protected List<ProdutoEspecifico> listProduto = new ArrayList<ProdutoEspecifico>();
 
-    
-    public boolean baixaEstoque(ProdutoEspecifico item, int qtd) {
-        if (item.getQtdEstoque() >= qtd ) {
-            item.setQtdEstoque(-getQtdProdutos());
-            this.pagamento(item, qtd);
-            return true;
-        }
-        System.out.println("Produto Sem Estoque");
-        return false;
-        
-    }
-    
-    protected void pagamento (ProdutoEspecifico item, int qtd) {
-        setValorTotal(qtd * item.getPreco());
-        System.out.print("Valor total: R$");
-        System.out.println(getValorTotal());
+    //construct
+    public Pedido(ProdutoEspecifico item) {
+        listProduto.add(item);
     }
 
-    //toString:
-    @Override
+    //add produto na lista
+    public void addProduto(ProdutoEspecifico item) {
+        listProduto.add(item);
+    }
+    
+       @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Pedido [valorTotal=");
-        builder.append(valorTotal);
-        builder.append(", qtdProdutos=");
-        builder.append(qtdProdutos);
-        builder.append("]");
+        builder.append("\nPedido[Produtos=");
+        builder.append(listProduto);
+        builder.append("]\n");
         return builder.toString();
     }
+    
+    
 
-    public double getValorTotal() {
-        return valorTotal;
+    public List getListProduto() {
+        return listProduto;
     }
 
-    public void setValorTotal(double valorTotal) {
-        this.valorTotal = valorTotal;
-    }
-
-    public int getQtdProdutos() {
-        return qtdProdutos;
-    }
-
-    public void setQtdProdutos(int qtdProdutos) {
-        this.qtdProdutos = qtdProdutos;
+    public void setListProduto(List listProduto) {
+        this.listProduto = listProduto;
     }
 
 }
