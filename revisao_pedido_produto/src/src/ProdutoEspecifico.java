@@ -26,7 +26,7 @@ public class ProdutoEspecifico extends ProdutoGenerico {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("ProdutoEspecifico[id=");
+        builder.append("\n  ProdutoEspecifico[id=");
         builder.append(id);
         builder.append(", cor=");
         builder.append(cor);
@@ -70,16 +70,7 @@ public class ProdutoEspecifico extends ProdutoGenerico {
         this.qtdEstoque = qtdEstoque;
 
         //mantém sempre atualizado o estoque Geral
-        this.setQtdEstoqueGeral(qtdEstoque);
-          /**
-         * 
-         * 
-         * 
-         * NAO TA FUNCIONANDO ! ! !
-         * 
-         * 
-         */
-        
+        this.setQtdEstoqueGeral(qtdEstoque);    
         
     }
 }

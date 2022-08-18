@@ -24,7 +24,7 @@ public class Distribuidor {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("\nDistribuidor[nome=");
+        builder.append("\n        Distribuidor[nome=");
         builder.append(nome);
         builder.append(", tipo=");
         builder.append(tipo);

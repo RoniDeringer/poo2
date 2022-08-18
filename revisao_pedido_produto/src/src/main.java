@@ -38,14 +38,11 @@ public class main {
         prod2.setQtdEstoque(2);
         
         
-        Pedido compra1 = new Pedido();
-        compra1.setQtdProdutos(1);
-        compra1.setValorTotal(0);
+        Pedido compra1 = new Pedido(prod1);
+        compra1.addProduto(prod2);
         
-        //RN: erro ao comprar mais que o estoque
-        compra1.baixaEstoque(prod2, 3); // dependencia
         
-        System.out.println(dist1);
+        System.out.println(compra1);
         
       
         
