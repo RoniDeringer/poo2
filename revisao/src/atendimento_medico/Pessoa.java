@@ -37,9 +37,15 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    @Override
+     @Override
     public String toString() {
-        return "Pessoa{" + "dataNascimento=" + dataNascimento + ", nome=" + nome + '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append(" Pessoa[nome=");
+        builder.append(nome);
+        builder.append(", dataNascimento= ");
+        builder.append(dataNascimento);
+        builder.append("]");
+        return builder.toString();
     }
 
     

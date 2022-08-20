@@ -13,13 +13,12 @@ public class Atendimento extends Operacao {
     protected Medico medico;
     protected Paciente paciente;
 
-    public Atendimento(Paciente paciente, String inicio, String fim) {
-        this.setInicio(inicio);
-        this.setFim(fim);
-        this.calculaPrioridade();
-        this.setEstado(estado);
+    public Atendimento(Paciente paciente) {
         this.medico = medico;
         this.paciente = paciente;
+        this.calculaPrioridade();
+        this.calculaEstado();
+
     }
 
     
@@ -83,11 +82,19 @@ public class Atendimento extends Operacao {
         this.paciente = paciente;
     }
 
-    @Override
+     @Override
     public String toString() {
-        return "Atendimento{" + "prioridade=" + prioridade + ", estado=" + estado + ", medico=" + medico + ", paciente=" + paciente + '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append("\nAtendimento[prioridade=");
+        builder.append(prioridade);
+        builder.append(", estado=");
+        builder.append(estado);
+        builder.append(medico);
+        builder.append(paciente);
+        builder.append("]");
+        return builder.toString();
     }
-    
+
     
 
 }

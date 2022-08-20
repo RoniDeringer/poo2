@@ -22,12 +22,14 @@ public class Medico extends Pessoa {
     public void setEspecialidade(Especialidade especialidade) {
         this.especialidade = especialidade;
     }
-
-    @Override
+    
+      @Override
     public String toString() {
-        return "Medico{" + "especialidade=" + especialidade + '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append("\nMedico[");
+        builder.append(especialidade);
+        builder.append(super.toString());
+        builder.append("]");
+        return builder.toString();
     }
-    
-    
-    
 }

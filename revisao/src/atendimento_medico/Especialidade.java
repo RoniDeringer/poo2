@@ -5,13 +5,13 @@ package atendimento_medico;
  * @author Roni
  */
 public class Especialidade {
-    
+
     private String descricao;
 
     public Especialidade(String descricao) {
         this.descricao = descricao;
     }
-    
+
     public String getDescricao() {
         return descricao;
     }
@@ -22,7 +22,6 @@ public class Especialidade {
 
     @Override
     public String toString() {
-        return "\n Especialidade{" + "descricao=" + descricao + '}';
+        return " Especialidade{" + "descricao=" + descricao + '}';
     }
-    
 }

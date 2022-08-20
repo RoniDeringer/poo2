@@ -15,8 +15,8 @@ public class Operacao {
     private Date inicio;
     private Date fim;
 
-   
     
+
     public Date tempoTotal() {
         System.out.println("Início: " + this.getInicio());
         System.out.println("Fim: " + this.getFim());
@@ -28,7 +28,8 @@ public class Operacao {
     public Date getInicio() {
         return inicio;
     }
-  //só vai ser utilizado caso alterar a data !
+
+    //só vai ser utilizado caso alterar a data !
     public void setInicio(String inicio) {
         try {
             this.inicio = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(inicio);
@@ -49,5 +50,5 @@ public class Operacao {
             Logger.getLogger(Operacao.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    
 }
