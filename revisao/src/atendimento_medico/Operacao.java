@@ -1,12 +1,13 @@
 package atendimento_medico;
-
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
  *
  * @author Roni
  */
-public class Operacao {
+public class Operacao{
 
 
     
@@ -18,12 +19,26 @@ public class Operacao {
     
     
     
-    
-    
-    
-    
-    
-    
+    /**
+     * formato esperado: string = 31/12/2021 15:25:60
+     * @param dataString
+     * @return Date
+     */
+//    private void convertData(String dataString) {
+//
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//
+//        Calendar dataFormat = Calendar.getInstance();
+//
+//        try {
+//            return dataFormat.setTime(sdf.parse(dataString));
+//
+//        } catch (Exception e) {
+//            System.out.println("Erro: " + e.getMessage());
+//        }
+//    }
+
+
     
     
     
