@@ -14,9 +14,9 @@ public class main {
        
         
         
-        Operacao operacao1 = new Operacao(02-1-2018 06:07:59, 02-1-2018 06:07:59)
+        Operacao operacao1 = new Operacao("20/08/2022 14:10", "30/12/2022 14:10");
         
-        
+        Medico medico1 = new Medico()
         
         
         

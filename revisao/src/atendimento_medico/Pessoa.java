@@ -1,6 +1,10 @@
 package atendimento_medico;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -10,13 +14,19 @@ public abstract class Pessoa {
 
     private Date dataNascimento;
     private String nome;
+    
+    
 
     public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setDataNascimento(String dataNascimento) {
+        try {
+            this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(dataNascimento);
+        } catch (ParseException ex) {
+            Logger.getLogger(Operacao.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public String getNome() {

@@ -1,5 +1,7 @@
 package atendimento_medico;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
@@ -11,6 +13,17 @@ public class Atendimento extends Operacao {
     protected Medico medico;
     protected Paciente paciente;
 
+    public Atendimento(int prioridade, int estado, Medico medico, Paciente paciente, String inicio, String fim) {
+        this.setInicio(inicio);
+        this.setFim(fim);
+        this.setPrioridade(prioridade);
+        this.setEstado(estado);
+        this.medico = medico;
+        this.paciente = paciente;
+    }
+
+    
+    
     public void calculaPrioridade(boolean prioridades[]) {
     }
 
@@ -26,7 +39,14 @@ public class Atendimento extends Operacao {
     }
 
     public void setPrioridade(int prioridade) {
-        this.prioridade = prioridade;
+        
+        System.out.println("--PRIORIDADE---");
+        System.out.println("1 - Alto");
+        System.out.println("2 - Médio");
+        System.out.println("3 - Baixo");
+        
+        Scanner s = new Scanner (System.in);
+        this.prioridade = s.nextInt();
     }
 
     public int getEstado() {
@@ -34,7 +54,13 @@ public class Atendimento extends Operacao {
     }
 
     public void setEstado(int estado) {
-        this.estado = estado;
+        System.out.println("--ESTADO---");
+        System.out.println("1 - Ferido");
+        System.out.println("2 - Morto");
+        System.out.println("3 - Mertiolate Resolve!");
+        
+        Scanner s = new Scanner (System.in);
+        this.estado = s.nextInt();
     }
 
     public Medico getMedico() {
