@@ -5,7 +5,7 @@ import java.util.Calendar;
 
 /**
  *
- * @author Roni
+ * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public class TestData {
 

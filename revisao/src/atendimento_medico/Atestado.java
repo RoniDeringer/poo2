@@ -14,7 +14,6 @@ public class Atestado{
         this.cid = cid;
     }
 
-    
     public void emitirAtestado(Atendimento atendimento) {
         System.out.println("---ATESTADO---");
         System.out.println("inicio: " + atendimento.getInicio());

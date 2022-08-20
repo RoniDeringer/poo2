@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Roni
+ * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public abstract class Pessoa {
 
@@ -23,7 +23,7 @@ public abstract class Pessoa {
 
     public void setDataNascimento(String dataNascimento) {
         try {
-            this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(dataNascimento);
+            this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy").parse(dataNascimento);
         } catch (ParseException ex) {
             Logger.getLogger(Operacao.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -37,4 +37,10 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" + "dataNascimento=" + dataNascimento + ", nome=" + nome + '}';
+    }
+
+    
 }

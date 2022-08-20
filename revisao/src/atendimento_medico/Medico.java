@@ -2,7 +2,7 @@ package atendimento_medico;
 
 /**
  *
- * @author Roni
+ * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public class Medico extends Pessoa {
     
@@ -21,6 +21,11 @@ public class Medico extends Pessoa {
 
     public void setEspecialidade(Especialidade especialidade) {
         this.especialidade = especialidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Medico{" + "especialidade=" + especialidade + '}';
     }
     
     
