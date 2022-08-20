@@ -4,6 +4,6 @@ package atendimento_medico;
  *
  * @author Roni
  */
-public class Paciente {
+public class Paciente extends Pessoa {
 
 }

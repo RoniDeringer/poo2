@@ -8,13 +8,13 @@ public class Atestado {
 
     private int cid;
 
-    public void emitirAtestado() {
-
+    public void emitirAtestado(Atendimento atendimento) {
+        System.out.println("---ATESTADO---");
+        System.out.println("inicio: " + atendimento.getInicio());
+        System.out.println("fim: " + atendimento.getFim());
+        
     }
 
-    
-    
-    
     
     
     

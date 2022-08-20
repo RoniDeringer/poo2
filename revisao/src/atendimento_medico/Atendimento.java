@@ -4,7 +4,7 @@ package atendimento_medico;
  *
  * @author Roni
  */
-public class Atendimento{
+public class Atendimento extends Operacao{
     
     private int prioridade;
     private int estado;
