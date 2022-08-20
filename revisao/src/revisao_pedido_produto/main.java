@@ -1,5 +1,7 @@
 package src;
 
+import revisao_pedido_produto.Pedido;
+
 /**
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>

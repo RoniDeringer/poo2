@@ -11,10 +11,10 @@ public class main {
 
     public static void main(String[] args) {
         
+       
         
         
-        
-        
+        Operacao operacao1 = new Operacao(02-1-2018 06:07:59, 02-1-2018 06:07:59)
         
         
         

@@ -1,7 +1,8 @@
-package src;
+package revisao_pedido_produto;
 
 import java.util.ArrayList;
 import java.util.List;
+import src.ProdutoEspecifico;
 
 /**
  * Pedido, a compra do produto

@@ -1,4 +1,7 @@
 package src;
+
+import revisao_pedido_produto.Pedido;
+
 /**
  *
  * @author roni.aviz

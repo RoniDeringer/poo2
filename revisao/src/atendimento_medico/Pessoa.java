@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Roni
  */
-public class Pessoa {
+public abstract class Pessoa {
 
     private Date dataNascimento;
     private String nome;
