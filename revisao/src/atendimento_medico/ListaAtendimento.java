@@ -13,7 +13,7 @@ public class ListaAtendimento {
 
     
     /**
-     * construtor recebe atendimento, e já adiciona na lista de atedimento!
+     * construtor recebe atendimento, e já adiciona na lista de atedimentos!
      *
      * @param atedimento
      */

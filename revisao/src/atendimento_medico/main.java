@@ -41,6 +41,21 @@ public class main {
         ate1.setFim("21/08/2022 15:00");
 
         System.out.println(ate1);
+        
+        ListaAtendimento listaAtendimento = new ListaAtendimento(ate1);
+
+
+        
+        //ATENDIMENTO 2
+        Atendimento ate2 = new Atendimento(pac2);
+        ate1.setMedico(med2);
+        ate1.setInicio("20/08/2021 08:00");
+        ate1.setFim("21/08/2021 08:00");
+
+        System.out.println(ate2);
+        
+        listaAtendimento.addLista(ate2);
+        
 
     }
 
