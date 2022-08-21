@@ -32,8 +32,6 @@ public class main {
         Paciente pac2 = new Paciente("Pedro mata pombo", "12/09/2000");
         Paciente pac3 = new Paciente("Jesus", "25/12/1800");
 
-        
-        
         //ATENDIMENTO 1
         Atendimento ate1 = new Atendimento(pac1);
         ate1.setMedico(med1);
@@ -41,19 +39,19 @@ public class main {
         ate1.setFim("21/08/2022 15:00");
 //        System.out.println(ate1);
 
-
-        
         //ATENDIMENTO 2
         Atendimento ate2 = new Atendimento(pac2);
         ate1.setMedico(med2);
         ate1.setInicio("20/08/2021 08:00");
         ate1.setFim("21/08/2021 08:00");
 //        System.out.println(ate2);
-        
-    //LISTA ATENDIMENTOS
+
+        //LISTA ATENDIMENTOS
         ListaAtendimento listaAtendimento = new ListaAtendimento(ate1);
         listaAtendimento.addLista(ate2);
         System.out.println(listaAtendimento);
+        //MEDICO DO ATE2 NAO ESTA MOSTRANDO (?)
+        
+        
     }
-
 }
