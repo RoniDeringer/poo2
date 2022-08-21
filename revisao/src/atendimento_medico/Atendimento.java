@@ -86,6 +86,7 @@ public class Atendimento extends Operacao {
      @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
+        builder.append("\n------------");
         builder.append("\nAtendimento[prioridade=");
         builder.append(prioridade);
         builder.append(", estado=");

@@ -39,10 +39,7 @@ public class main {
         ate1.setMedico(med1);
         ate1.setInicio("20/08/2022 15:00");
         ate1.setFim("21/08/2022 15:00");
-
-        System.out.println(ate1);
-        
-        ListaAtendimento listaAtendimento = new ListaAtendimento(ate1);
+//        System.out.println(ate1);
 
 
         
@@ -51,11 +48,11 @@ public class main {
         ate1.setMedico(med2);
         ate1.setInicio("20/08/2021 08:00");
         ate1.setFim("21/08/2021 08:00");
-
-        System.out.println(ate2);
+//        System.out.println(ate2);
         
+    //LISTA ATENDIMENTOS
+        ListaAtendimento listaAtendimento = new ListaAtendimento(ate1);
         listaAtendimento.addLista(ate2);
-        
         System.out.println(listaAtendimento);
     }
 
