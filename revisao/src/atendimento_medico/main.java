@@ -56,7 +56,7 @@ public class main {
         
         listaAtendimento.addLista(ate2);
         
-
+        System.out.println(listaAtendimento);
     }
 
 }

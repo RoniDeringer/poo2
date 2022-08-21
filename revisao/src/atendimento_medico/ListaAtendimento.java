@@ -13,7 +13,7 @@ public class ListaAtendimento {
 
     
     /**
-     * construtor recebe atendimento, e já adiciona na lista de atedimentos!
+     * construtor recebe atendimento, e já adiciona na lista de atedimento!
      *
      * @param atedimento
      */
@@ -38,5 +38,14 @@ public class ListaAtendimento {
         this.listaAtendimento = listaAtendimento;
     }
 
-   
+       @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("\nListaAtendimento[");
+        builder.append(listaAtendimento);
+        builder.append("]\n");
+        return builder.toString();
+
+    }
+    
 }

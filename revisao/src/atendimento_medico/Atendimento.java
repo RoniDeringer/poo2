@@ -18,7 +18,7 @@ public class Atendimento extends Operacao {
         this.paciente = paciente;
         this.calculaPrioridade();
         this.calculaEstado();
-        this.
+      
 
     }
 
