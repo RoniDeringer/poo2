@@ -16,6 +16,7 @@ public class Aluno extends Pessoa {
     private String cpf;
     private Date dataNascimento;
     private String email;
+    protected FormatType formatType;
 
     public Aluno(String nome, String matricula, String cpf, String dataNascimento, String email) {
         this.setNome(nome);
@@ -24,7 +25,11 @@ public class Aluno extends Pessoa {
         this.setDataNascimento(dataNascimento);
         this.setEmail(email);
     }
-
+    
+    public void imprima(FormatType formatType){
+        System.out.println(formatType.imprima(this));
+    }
+    
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
