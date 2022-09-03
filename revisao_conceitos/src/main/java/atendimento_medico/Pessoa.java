@@ -25,7 +25,7 @@ public abstract class Pessoa {
         try {
             this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy").parse(dataNascimento);
         } catch (ParseException ex) {
-            Logger.getLogger(Operacao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Pessoa.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
