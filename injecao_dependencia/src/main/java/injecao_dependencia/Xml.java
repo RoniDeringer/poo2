@@ -10,7 +10,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 public class Xml implements FormatType {
 
     @Override
-    public String imprima(Aluno object) {
+    public String converte(Aluno object) {
         XStream xml = new XStream(new DomDriver());
        return (xml.toXML(object));
     }

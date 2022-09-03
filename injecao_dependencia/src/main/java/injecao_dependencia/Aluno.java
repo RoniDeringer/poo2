@@ -26,8 +26,13 @@ public class Aluno extends Pessoa {
         this.setEmail(email);
     }
     
+    /**
+     * Recebe como parametro um tipo de formato (json ou xml)
+     * e faz o sysout no retorno do metodo converte
+     * que vai retornar uma String no formato desejado
+     */
     public void imprima(FormatType formatType){
-        System.out.println(formatType.imprima(this));
+        System.out.println(formatType.converte(this));
     }
     
     @Override
