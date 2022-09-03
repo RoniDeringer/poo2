@@ -25,16 +25,17 @@ public class Aluno extends Pessoa {
         this.setDataNascimento(dataNascimento);
         this.setEmail(email);
     }
-    
+
     /**
-     * Recebe como parametro um tipo de formato (json ou xml)
-     * e faz o sysout no retorno do metodo converte
-     * que vai retornar uma String no formato desejado
+     * imprima() Recebe como parametro um tipo de formato (json ou xml)
+     * faz o sysout do retorno do metodo converte() 
+     * converte() recebe como parametro meu objeto atual Aluno
+     * e retorna uma String no formato que desejado
      */
-    public void imprima(FormatType formatType){
+    public void imprima(FormatType formatType) {
         System.out.println(formatType.converte(this));
     }
-    
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
