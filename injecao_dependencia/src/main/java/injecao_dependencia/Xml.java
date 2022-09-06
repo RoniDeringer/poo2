@@ -12,6 +12,6 @@ public class Xml implements FormatType {
     @Override
     public String converte(Aluno object) {
         XStream xml = new XStream(new DomDriver());
-       return (xml.toXML(object));
+        return (xml.toXML(object));
     }
 }

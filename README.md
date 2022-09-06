@@ -14,7 +14,14 @@ ____
     * Calculos com tipo _Date_;
     * Aplicado o conceito de solid utilizando `ìnterface` para implementar idiomas diferentes escolhido pelo usuário 
 ____
-## 📌 Solid
-* Aspectos ESTRUTURAIS devem ser **preferencialmente** implementando usando classe
-* Aspectos COMPORTAMENTAIS devem ser **preferencialmente** implementando usando Interfaces
+## 📌 Injeção de dependência
+ Aspectos ESTRUTURAIS devem ser **preferencialmente** implementando usando classe<br>
+ Aspectos COMPORTAMENTAIS devem ser **preferencialmente** implementando usando Interfaces
+ <br>
+
+* 🛠️ [Modelo de persistência (Gson e XStream)](injecao_dependencia/)
+    * Exercício utilizando o conceito de injeção de dependência
+    * `Gson` Biblioteca usada para escrever um *Json* 
+    * `XStream` Biblioteca usada para escrever um *Xml* 
+     
     
