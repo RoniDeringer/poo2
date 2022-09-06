@@ -23,5 +23,13 @@ ____
     * Exercício utilizando o conceito de injeção de dependência
     * `Gson` Biblioteca usada para escrever um *Json* 
     * `XStream` Biblioteca usada para escrever um *Xml* 
-     
-    
+
+### Boas práticas: <br>
+ Parametros sao nomeados por letras maisuclas unicas    <br>
+**E** - Element<br>
+**T** - type<br>
+**V** - Value<br>
+**K** - Key<br>
+**N** - Number<br>
+
+S, u V etc.. segunto terceiro e quantos tipos de uma lista parametros
