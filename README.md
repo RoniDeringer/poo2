@@ -25,13 +25,13 @@ ____
     * `Gson` Biblioteca usada para escrever um *Json* 
     * `XStream` Biblioteca usada para escrever um *Xml* 
 
-### 📌 Métodos genericos
+### 📌 Generics
 
-* 🛠️ [Modelo de persistência (Gson e XStream)](injecao_dependencia/ExercicioMetodoGenerico/)
-    * 
+* 🛠️ [4 exercícios](generics)
+    * teste
 
 **Boas práticas:** <br>
- Parametros sao nomeados por letras maisuclas unicas    <br>
+ Parametros são nomeados por letras maiúsculas uúicas    <br>
 **E** - Element<br>
 **T** - type<br>
 **V** - Value<br>
