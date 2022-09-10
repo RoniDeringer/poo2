@@ -29,21 +29,21 @@ ___
 <br>
 
     2 - Um software já implantado de uma comércio de 
-    produtos tem como id de produto o tipo Integer, porém 
-    com as ampliações e novas vendas do software alguns 
-    novos clientes usam o id como tipo String. Os atributos
-    da classe são apresentados abaixo:
+     produtos tem como id de produto o tipo Integer, porém 
+     com as ampliações e novas vendas do software alguns 
+     novos clientes usam o id como tipo String. Os atributos
+     da classe são apresentados abaixo:
 
-    Produto
-    id
-    valor
-    dataFabricação
-    dataVencimento
+     Produto
+     id
+     valor
+     dataFabricação
+     dataVencimento
 
-    Recrie a classe Produto usando Generics permitindo 
-    assim que o id possa ser Integer ou String dependendo
-    da utilização em cada um dos clientes, também crie o 
-    Main mostrando as duas utilizações.
+     Recrie a classe Produto usando Generics permitindo 
+     assim que o id possa ser Integer ou String dependendo
+     da utilização em cada um dos clientes, também crie o 
+     Main mostrando as duas utilizações.
 
 
 ____
@@ -111,23 +111,23 @@ ____
      
 **Estão corretas, apenas:**
    
-- [x] a) 1, 2, 3, 4. 
-- [x] b) 1, 2, 3, 5.                    
-- [x] c) 1, 2, 4, 5.                                
-- [x] d) 1, 3, 4, 5.  
-- [x] e) 2, 3, 4, 5.
+- [] a) 1, 2, 3, 4. 
+- [] b) 1, 2, 3, 5.                    
+- [] c) 1, 2, 4, 5.                                
+- [] d) 1, 3, 4, 5.  
+- [] e) 2, 3, 4, 5.
 
 ____
 <br>
 
-    (Concurso Público - INAZ do Pará - 2019 - CORE-SP - Analista de T.I)
+(Concurso Público - INAZ do Pará - 2019 - CORE-SP - Analista de T.I)
 
-    Qual o trecho de código que utiliza o recurso chamado
+     Qual o trecho de código que utiliza o recurso chamado
      generics da forma correta, ao criar uma lista de 
      objetos da classe Discente?
 
-    a) List<Discente> lstDiscente = new ArrayList().
-    b) List<> lstDiscente = new ArrayList<>().
-    c) List<Discente> lstDiscente = new ArrayList<>().
-    d) List lstDiscente = new ArrayList<Discente>().
-    e) List<Discente> lstDiscente = new ArrayList (Discente).
+- [] a) List<Discente> lstDiscente = new ArrayList().
+- [] b) List<> lstDiscente = new ArrayList<>().
+- [] c) List<Discente> lstDiscente = new ArrayList<>().
+- [] d) List lstDiscente = new ArrayList<Discente>().
+- [] e) List<Discente> lstDiscente = new ArrayList (Discente).
