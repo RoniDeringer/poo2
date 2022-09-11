@@ -7,6 +7,7 @@
      classe e o Main, demonstrando no Main pelo menos a 
      utilização com três tipos diferentes (objetos do Java 
      e pelo menos um que você criou).
+>Exemplo:
 
 **Classe**
 
@@ -77,7 +78,7 @@ ____
 <br>
 <br>
 
-## ❓ | (Concurso Público - SUGEP - UFRPE - 2016 - UFRPE - Técnico - Tecnologia da Informação)
+## ❓ (Concurso Público - SUGEP - UFRPE - 2016 - UFRPE - Técnico - Tecnologia da Informação)
 
 <br>
 
@@ -111,11 +112,11 @@ ____
      
 **Estão corretas, apenas:**
    
-- [] a) 1, 2, 3, 4. 
-- [] b) 1, 2, 3, 5.                    
-- [] c) 1, 2, 4, 5.                                
-- [] d) 1, 3, 4, 5.  
-- [] e) 2, 3, 4, 5.
+- [x] a) 1, 2, 3, 4. 
+- [x] b) 1, 2, 3, 5.                    
+- [x] c) 1, 2, 4, 5.                                
+- [x] d) 1, 3, 4, 5.  
+- [x] e) 2, 3, 4, 5.
 
 ____
 <br>
@@ -126,8 +127,8 @@ ____
      generics da forma correta, ao criar uma lista de 
      objetos da classe Discente?
 
-- [] a) List<Discente> lstDiscente = new ArrayList().
-- [] b) List<> lstDiscente = new ArrayList<>().
-- [] c) List<Discente> lstDiscente = new ArrayList<>().
-- [] d) List lstDiscente = new ArrayList<Discente>().
-- [] e) List<Discente> lstDiscente = new ArrayList (Discente).
+- [x] a) List<Discente> lstDiscente = new ArrayList().
+- [x] b) List<> lstDiscente = new ArrayList<>().
+- [x] c) List<Discente> lstDiscente = new ArrayList<>().
+- [x] d) List lstDiscente = new ArrayList<Discente>().
+- [x] e) List<Discente> lstDiscente = new ArrayList (Discente).

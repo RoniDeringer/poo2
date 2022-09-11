@@ -1,11 +1,11 @@
-package tipagem_generica;
+package Exercicio1;
 
 /**
  *
  * @author
  * <https://stackoverflow.com/questions/3993982/how-to-check-type-of-variable-in-java>
  */
-public class Typetester {
+public class TypeTester {
 
     void printType(byte x) {
         System.out.println(x + " is an byte");
@@ -25,5 +25,9 @@ public class Typetester {
 
     void printType(char x) {
         System.out.println(x + " is an char");
+    }
+    
+    void printType(Object x) {
+        System.out.println(x + " is an object");
     }
 }
