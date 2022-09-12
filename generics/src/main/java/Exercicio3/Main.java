@@ -14,7 +14,6 @@ public class Main {
         pedido.add(new ProdutoX(1, "Produto1"));
         pedido.add(new ProdutoX(2, "Produto2"));
 
-        
         //mostrar
         System.out.println(pedido.viewProdutos());
     }
