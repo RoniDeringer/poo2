@@ -2,7 +2,7 @@ package Exercicio3;
 
 /**
  *
- * @author Roni
+ * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public class ProdutoX {
 

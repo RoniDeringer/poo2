@@ -121,7 +121,7 @@ ____
 ____
 <br>
 
-(Concurso Público - INAZ do Pará - 2019 - CORE-SP - Analista de T.I)
+## ❓ (Concurso Público - INAZ do Pará - 2019 - CORE-SP - Analista de T.I)
 
      Qual o trecho de código que utiliza o recurso chamado
      generics da forma correta, ao criar uma lista de 
