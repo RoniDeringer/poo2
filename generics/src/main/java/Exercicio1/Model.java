@@ -9,7 +9,6 @@ public class Model {
     private String texto;
     private int num;
 
-    
     public Model(String texto, int num) {
         setTexto(texto);
         setNum(num);
@@ -22,8 +21,8 @@ public class Model {
     public void setTexto(String texto) {
         this.texto = texto;
     }
-    
-     public int getNum() {
+
+    public int getNum() {
         return num;
     }
 

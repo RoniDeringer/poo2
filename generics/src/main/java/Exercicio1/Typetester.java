@@ -26,7 +26,7 @@ public class TypeTester {
     void printType(char x) {
         System.out.println(x + " is an char");
     }
-    
+
     void printType(Object x) {
         System.out.println(x + " is an object");
     }

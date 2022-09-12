@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- * @author Roni
+ * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
 public class Pedido<T> {
 
