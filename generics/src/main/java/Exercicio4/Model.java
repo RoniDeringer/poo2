@@ -16,30 +16,6 @@ public class Model<T> {
         setKey(key);
         setValue(value);
     }
-
-    
-    List<Model<T>> listModel = new ArrayList<Model<T>>();
-
-    //retorna o objeto unico dentro da lista
-    public Model<T> get(String key) {
-        for (Model<T> model : listModel) {
-            if (model.getKey() == key) {
-                return model;
-            }
-        }
-        return null;
-    }
-
-    //chave nao pode ser nula
-    public boolean add(String key, T value) {
-        if (get(key) == null) {
-            listModel.add(new Model<T>(key, value));
-            return true;
-        }
-        return false;
-    }
-    
-    
     
     
     public String getKey() {
@@ -69,4 +45,27 @@ public class Model<T> {
         return builder.toString();
 
     }
+        List<Model<T>> listModel = new ArrayList<Model<T>>();
+
+    
+    //retorna o objeto unico dentro da lista
+    public Model<T> get(String key) {
+        for (Model<T> model : listModel) {
+            if (model.getKey() == key) {
+                return model;
+            }
+        }
+        return null;
+    }
+
+    //chave nao pode ser nula
+    public boolean add(String key, T value) {
+        if (get(key) == null) {
+            listModel.add(new Model<T>(key, value));
+            return true;
+        }
+        return false;
+    }
+
+
 }
