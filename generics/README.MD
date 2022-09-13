@@ -112,10 +112,10 @@ ____
      
 **Estão corretas, apenas:**
    
-- [ ] a) 1, 2, 3, 4. 
+- [x] a) 1, 2, 3, 4. 
 - [ ] b) 1, 2, 3, 5.                    
 - [ ] c) 1, 2, 4, 5.                                
-- [x] d) 1, 3, 4, 5.  
+- [ ] d) 1, 3, 4, 5.  
 - [ ] e) 2, 3, 4, 5.
 
 ____
@@ -127,8 +127,8 @@ ____
      generics da forma correta, ao criar uma lista de 
      objetos da classe Discente?
 
-- [] a) List<Discente> lstDiscente = new ArrayList().
+- [ ] a) List<Discente> lstDiscente = new ArrayList().
 - [x] b) List<> lstDiscente = new ArrayList<>().
-- [x] c) List<Discente> lstDiscente = new ArrayList<>().
-- [x] d) List lstDiscente = new ArrayList<Discente>().
-- [x] e) List<Discente> lstDiscente = new ArrayList (Discente).
+- [ ] c) List<Discente> lstDiscente = new ArrayList<>().
+- [ ] d) List lstDiscente = new ArrayList<Discente>().
+- [ ] e) List<Discente> lstDiscente = new ArrayList (Discente).
