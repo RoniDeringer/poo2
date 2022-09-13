@@ -8,21 +8,32 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Model object = new Model("Test String", 123);
+        Objeto objeto = new Objeto("teste");
+        int inteiro = 1;
+        String stringui = "texto";
+        
 
-        ListModel<String> string = new ListModel<String>();
-        ListModel<Integer> integer = new ListModel<Integer>();
-        ListModel<Model> model = new ListModel<Model>();
-
-        integer.add(Integer.valueOf(54321));
-        string.add(new String("texto"));
-        model.add(object);
-
+        ClasseGenerica<Object> cgObjeto = new ClasseGenerica<Object>(objeto);
+        ClasseGenerica<Integer> cgInteiro = new ClasseGenerica<Integer>(inteiro);
+        ClasseGenerica<String> cgString = new ClasseGenerica<String>(stringui);
+        
+        System.out.println("\n objeto:");
+        System.out.println(cgObjeto);
+        
+        System.out.println("\n Inteiro:");
+        System.out.println(cgInteiro);
+        
+        System.out.println("\n String:");
+        System.out.println(cgString);
+        
+        
+        
+        //teste falho...
         TypeTester t = new TypeTester();
-
-        t.printType(object);
-        t.printType(integer);
-        t.printType(string);
+        System.out.println("\n");
+        t.printType(cgObjeto);
+        t.printType(cgInteiro);
+        t.printType(cgString);
 
     }
 }
