@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Objeto objeto = new Objeto("teste");
+        Pessoa objeto = new Pessoa("teste");
         int inteiro = 1;
         String stringui = "texto";
         
@@ -30,7 +30,6 @@ public class Main {
         
         
         
-        //teste falho...
         TypeTester t = new TypeTester();
         System.out.println("\n");
         t.printType(cgObjeto.getAtributoGenerico());

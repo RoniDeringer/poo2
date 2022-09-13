@@ -11,7 +11,7 @@ public class Main {
         Produto<Integer> integer = new Produto<Integer>(1);
         Produto<String> string = new Produto<String>("Um");
 
-        System.out.println(integer.get());
-        System.out.println(string.get());
+        System.out.println(integer);
+        System.out.println(string);
     }
 }

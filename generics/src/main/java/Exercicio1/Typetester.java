@@ -14,7 +14,15 @@ public class TypeTester {
     void printType(int x) {
         System.out.println(x + " is an int");
     }
+    
+    void printType(Integer x) {
+        System.out.println(x + " is an Integer");
+    }
 
+    void printType(String x) {
+        System.out.println(x + " is an String");
+    }
+    
     void printType(float x) {
         System.out.println(x + " is an float");
     }

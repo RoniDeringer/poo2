@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
-public class Pedido<T> {
+public class Pedido<T extends ProdutoX> {
 
     List<T> listProdutos = new ArrayList<T>();
 

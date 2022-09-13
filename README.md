@@ -33,7 +33,7 @@ ____
 **Boas práticas:** <br>
  Parametros são nomeados por letras maiúsculas uúicas    <br>
 **E** - Element<br>
-**T** - type<br>
+**T** - Type<br>
 **V** - Value<br>
 **K** - Key<br>
 **N** - Number<br>
