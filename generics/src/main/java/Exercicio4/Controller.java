@@ -23,10 +23,10 @@ public class Controller<T> {
 
     //chave nao pode ser nula
     public boolean add(String key, T value) {
-        if (get(key) != null) {
-            return false;
+        if (get(key) == null) {
+            listModel.add(new Model<T>(key, value));
+            return true;
         }
-        listModel.add(new Model<T>(key, value));
-        return true;
+        return false;
     }
 }

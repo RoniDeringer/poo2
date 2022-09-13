@@ -17,6 +17,8 @@ public class Main {
         ClasseGenerica<Integer> cgInteiro = new ClasseGenerica<Integer>(inteiro);
         ClasseGenerica<String> cgString = new ClasseGenerica<String>(stringui);
         
+        
+        //toString()
         System.out.println("\n objeto:");
         System.out.println(cgObjeto);
         
@@ -31,9 +33,9 @@ public class Main {
         //teste falho...
         TypeTester t = new TypeTester();
         System.out.println("\n");
-        t.printType(cgObjeto);
-        t.printType(cgInteiro);
-        t.printType(cgString);
+        t.printType(cgObjeto.getAtributoGenerico());
+        t.printType(cgInteiro.getAtributoGenerico());
+        t.printType(cgString.getAtributoGenerico());
 
     }
 }
