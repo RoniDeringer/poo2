@@ -4,11 +4,11 @@ package Exercicio1;
  *
  * @author Roni Deringer <ronideringer.ifc@gmail.com>
  */
-public class Objeto {
+public class Pessoa {
 
     private String nome;
 
-    public Objeto(String nome) {
+    public Pessoa(String nome) {
         setNome(nome);
     }
 
